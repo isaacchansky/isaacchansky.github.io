@@ -1,0 +1,97 @@
+@import './variables';
+
+$inset-section-padding: 15rem 2rem;
+
+$color_lines: rgba($color_light, 0.06);
+
+$unit-large: 10rem;
+
+
+[class*="page-section"] {
+    position: relative;
+    padding-top: $unit-large/2;
+    padding-bottom: $unit-large;
+    margin-bottom: $unit-large;
+
+    &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        // offet headings
+        &:not(.page-section__intro) > *:not(h2) {
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+    }
+}
+
+/* intersection right-aligned triangle lines*/
+
+.index-page .page-section__intro:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 2px solid $color_lines;
+    width: 100%;
+    background: $color_lines;
+    transform: translate(3rem, -$unit-large/2) skew(0, -23deg);
+}
+
+.index-page .page-section__intro:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 2px solid $color_lines;
+    width: 100%;
+    background: $color_lines;
+    transform: translate(0rem, -$unit-large/2) skew(0, -23deg);
+}
+
+
+// circle
+.index-page .page-section__working:before {
+    content: '';
+    width: $unit-large;
+    position: absolute;
+    bottom: -$unit-large/2;
+    left: calc(50% - #{$unit-large/2});
+    border: 2px solid $color_lines;
+    border-radius: 100%;
+    height: $unit-large;
+}
+
+.index-page .page-section__working:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 2px solid $color_lines;
+    width: 100%;
+    background: $color_lines;
+    transform: translateY(0rem) skew(0, 45deg);
+}
+
+.index-page .page-section__exploring:after {
+    content: '';
+    width: $unit-large/2;
+    position: absolute;
+    bottom: -$unit-large/2;
+    left: calc(50% - 6rem);
+    border: 2px solid $color_lines;
+    border-radius: 100%;
+    height: $unit-large/2;
+}
+.index-page .page-section__exploring:before {
+    content: '';
+    width: $unit-large/2;
+    position: absolute;
+    bottom: -8rem;
+    left: calc(50% - 4rem);
+    border: 2px solid $color_lines;
+    border-radius: 100%;
+    height: $unit-large/2;
+}

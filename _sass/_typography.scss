@@ -1,0 +1,125 @@
+
+@font-face {
+    font-family: 'klinic slab light';
+    src: url('/assets/fonts/klinicslablight-webfont.eot');
+    src: url('/assets/fonts/klinicslablight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/klinicslablight-webfont.woff2') format('woff2'),
+         url('/assets/fonts/klinicslablight-webfont.woff') format('woff'),
+         url('/assets/fonts/klinicslablight-webfont.ttf') format('truetype'),
+         url('/assets/fonts/klinicslablight-webfont.svg#klinicslablight') format('svg');
+     font-weight: normal;
+}
+
+@font-face {
+    font-family: 'klinic slab italic light';
+    src: url('/assets/fonts/klinicslablightit-webfont.eot');
+    src: url('/assets/fonts/klinicslablightit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/klinicslablightit-webfont.woff2') format('woff2'),
+         url('/assets/fonts/klinicslablightit-webfont.woff') format('woff'),
+         url('/assets/fonts/klinicslablightit-webfont.ttf') format('truetype'),
+         url('/assets/fonts/klinicslablightit-webfont.svg#klinicslablightit') format('svg');
+     font-weight: normal;
+}
+
+@font-face {
+    font-family: 'klinic slab italic';
+    src: url('/assets/fonts/klinicslabmediumit-webfont.eot');
+    src: url('/assets/fonts/klinicslabmediumit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/klinicslabmediumit-webfont.woff2') format('woff2'),
+         url('/assets/fonts/klinicslabmediumit-webfont.woff') format('woff'),
+         url('/assets/fonts/klinicslabmediumit-webfont.ttf') format('truetype'),
+         url('/assets/fonts/klinicslabmediumit-webfont.svg#klinicslabmediumit') format('svg');
+     font-weight: normal;
+}
+
+@font-face {
+    font-family: 'klinic slab';
+    src: url('/assets/fonts/klinicslabmedium-webfont.eot');
+    src: url('/assets/fonts/klinicslabmedium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/klinicslabmedium-webfont.woff2') format('woff2'),
+         url('/assets/fonts/klinicslabmedium-webfont.woff') format('woff'),
+         url('/assets/fonts/klinicslabmedium-webfont.ttf') format('truetype'),
+         url('/assets/fonts/klinicslabmedium-webfont.svg#klinicslabmedium') format('svg');
+     font-weight: normal;
+}
+
+
+$base-px: 16px;
+$base: 1rem;
+$ratio: 1.4;
+
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'klinic slab';
+  letter-spacing: 0.2px;
+  font-size: $base-px;
+  font-size: $base;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-weight: normal;
+  word-wrap: break-word;
+  font-kerning: normal;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'klinic slab light';
+  letter-spacing: 1px; // because dark background
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 1.45rem;
+}
+
+h3, h4, h5, h6 {
+  font-family: 'klinic slab';
+  letter-spacing: 1.5px;
+}
+
+h1 {
+  // font-size: 2.25rem;
+  line-height: 1.2;
+  font-size: $base * $ratio * $ratio;
+}
+h2 {
+  font-size: $base * $ratio;
+  line-height: 1.2;
+}
+h3 {
+  font-size: $base;
+  line-height: 1.2;
+}
+h4 {
+  font-size: $base;
+  line-height: 1.2;
+}
+h5 {
+  font-size: $base ;
+  line-height: 1.2;
+}
+h6 {
+  font-size: $base;
+  line-height: 1.2;
+}
+
+
+.t-linelength {
+  max-width: 36em;
+}
+
+.big-link {
+  font-size: $base * $ratio * $ratio;
+}

@@ -1,0 +1,23 @@
+@import './variables.scss';
+
+.main-footer {
+    border-bottom: 2px solid $color_light;
+    padding: 2rem 1rem;
+    position: relative;
+    margin-bottom: 10rem;
+}
+
+.main-footer:before {
+    content: '≃';
+    position: absolute;
+    bottom: -5rem;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    color: rgba($color_light, 0.1);
+    font-size: 2rem;
+}
+
+.main-footer p {
+    margin-bottom: 0;
+}

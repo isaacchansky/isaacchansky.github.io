@@ -1,0 +1,66 @@
+---
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: home
+---
+
+ <section class="page-section__intro">
+    <h1>Hey there, I'm Isaac.<br/>
+        I design and build digital, web stuff. <br/>
+        I value curiosity and exploration above all.
+    </h1>
+    <div class="gravity-right pad-sm content">
+        <p class="t-linelength">I work with companies and individuals of all sorts, gravitating mostly towards projects and endeavors which contain some spark of social good. Recentnly, that's been things like fostering citizen science to imporove our environment, helping struggling individuals get ahold of their financial future, and making government representation more transparent. <a href="#collaborating"><Scroll type="id" element="collaborating">Hit me up</Scroll></a>, let's work together.</p>
+    </div>
+
+</section>
+
+
+<section id="working" class="page-section__working">
+    <h2>I work on things I believe in</h2>
+    <p class="t-linelength content">
+        I've had the great fortune of working with some fantastic teams and individuals solving problems <a href="//www.iseechange.org">with our environment</a>, uncovering the <a href="//www.placeful.io">full value of our neighborhoods</a>, encouraging <a href="//www.engagefamilies.org">family education</a>, and improving communications around <a href="//www.mass.gov">state government services</a>. Recent clients include:
+    </p>
+    <div class="content">
+        <h3 class="big-link"><a href="//mass.gov">Commonwealth of Massachusetts</a></h3>
+        <h3 class="big-link"><a href="//www.iseechange.org">I See Change</a></h3>
+        <h3 class="big-link"><a href="//www.placeful.io">Placeful.io</a></h3>
+    </div>
+
+</section>
+
+
+
+
+<section id="exploring" class="page-section__exploring">
+    <h2>Exploring a Continuous Stream of Side Projects</h2>
+    <p class="t-linelength content">
+        I also like to keep busy learning &amp; experimenting. The following are some side-projects which I’m currently working on or playing with.</p>
+
+    <div class="block-items">
+        {% for project in site.data.projects %}
+            {% include block-item.html title=project.title href=project.url description=project.description %}
+        {% endfor %}
+
+    </div>
+</section>
+
+
+<!-- <section id="writing" class="page-section__writing">
+    <h2>Writing</h2>
+    <p class="t-linelength content">
+        <a href="//twitter.com/isaacchansky">Currently, just twitter... but working on a few things.</a>
+    </p>
+
+</section> -->
+
+
+
+<section id="collaborating" class="page-section__collaborating">
+    <h2>Let's build something great together</h2>
+    <div class="gravity-right pad-sm content">
+        <p class="t-linelength">I'm currently open for short-term projects and collaborations. Hit me up on some trendy social network (I'm 'isaacchansky' everywhere) or send an email to ichansky at gmail dot com.</p>
+    </div>
+
+</section>
