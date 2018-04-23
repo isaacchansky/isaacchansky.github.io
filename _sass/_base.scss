@@ -4,9 +4,6 @@
   background-color: #daa520;
 }
 
-html {
-  @extend %textured-background;
-}
 body {
   padding: 1rem;
   max-width: $max-outer-width;

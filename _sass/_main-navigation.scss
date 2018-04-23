@@ -2,7 +2,7 @@
 
 
 .main-navigation {
-    border-top: 2px solid $color_light;
+    border-top: 2px solid $color_dark;
     padding: 1rem 0;
     display: flex;
     justify-content: space-between;
@@ -33,7 +33,7 @@
     text-decoration: none;
     position: relative;
     padding-left: 1rem;
-    color: $color_light;
+    color: $color_dark;
 }
 .main-navigation li a::before {
     content: '';
@@ -42,7 +42,7 @@
     left: 0;
     width: 0.5rem;
     height: 1px;
-    background: $color_light;
+    background: lighten($color_dark, 5%);
     transition: all 250ms ease-in-out;
 }
 
@@ -55,7 +55,7 @@
 .main-navigation li a:hover::before,
 .main-navigation li a:focus::before {
     width: 100%;
-    background-color: #daa520;
+    background-color: $color_dark;
 }
 .main-navigation li a:focus {
     outline: none;
