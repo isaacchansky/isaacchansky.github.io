@@ -1,21 +1,56 @@
+@import './variables.scss';
+
+
+body {
+    overflow-x: hidden;
+}
+
 .gravity-right {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
 
-.item-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
+.pad-sm {
+    padding: 2rem 0;
+}
 
-    > * {
-        margin: 2rem;
+.pad-md {
+    padding: 4rem 0;
+}
+
+.pad-lg {
+    padding: 8rem 0;
+}
+
+.main-footer {
+    padding: 2rem 0;
+    position: relative;
+    margin-bottom: 5rem;
+
+    a + a {
+        position: relative;
+        margin-left: 2rem;
+        &:before {
+            position: absolute;
+            content: '/';
+            display: inline-block;
+            left: -1.8rem;
+        }
     }
 }
 
-.pad-sm {
-    padding: 1rem 0;
+.main-footer:before {
+    content: '≃';
+    position: absolute;
+    bottom: -5rem;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    color: $color_light;
+    font-size: 2rem;
 }
 
+.main-footer p {
+    margin-bottom: 0;
+}

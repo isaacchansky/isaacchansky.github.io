@@ -4,11 +4,22 @@
   background-color: #daa520;
 }
 
+html {
+  background-color: $color_dark;
+}
 body {
-  padding: 1rem;
-  max-width: $max-outer-width;
-  width: calc(100% - 2rem);
-  margin: 0 auto;
+  padding: 4rem 2rem;
+  // border: 1.5rem solid $color_dark;
+  margin: 0;
+  background-color: $color_white;
+
+  @media screen and (min-width: 768px) {
+    > * {
+      max-width: 90rem;
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
 }
 
 article,
