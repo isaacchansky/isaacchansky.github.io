@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  font-family: 'fira mono';
+  font-family: 'fira mono', 'Courier New', Courier, monospace;
   letter-spacing: 0.2px;
   color: $color_dark;
   font-size: $base;
@@ -48,7 +48,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'league spartan';
+  font-family: 'league spartan', Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   color: inherit;
